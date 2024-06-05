@@ -58,11 +58,11 @@ const ComputersCanvas = () => {
       {isMobile ? (
         <img src={robot} alt="Robot"
         style={{
-          position: "absolute",
+          position: "relative",
           top: "60%",
           left: "50%",
           transform: "translate(-50%, -50%)",
-          zIndex: 1000
+          width: "200px"
         }} />
       ) : (
         <Canvas

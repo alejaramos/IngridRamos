@@ -4,7 +4,6 @@ import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constans";
 
-
 const Tech = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -29,9 +28,8 @@ const Tech = () => {
     };
   }, []);
 
-  // If it's mobile, do not render the technologies
   if (isMobile) {
-    return null;
+    return <></>;
   }
 
   return (
