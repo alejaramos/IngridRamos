@@ -28,11 +28,9 @@ const Tech = () => {
     };
   }, []);
 
-  if (isMobile) {
-    return <></>;
-  }
-
-  return (
+  return isMobile ? (
+    <></>
+  ) : (
     <div className="flex flex-row flex-wrap justify-center gap-10">
       {technologies.map((technologie) => (
         <div className="w-28 h-28" key={technologie.name}>
